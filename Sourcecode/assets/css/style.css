@@ -1,0 +1,423 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+* {
+    font-family: Ubuntu;
+}
+
+.mobile-container {
+    position: relative;
+
+
+}
+
+    /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+     body{
+         overflow-x: hidden;
+     }
+
+    #text {
+        z-index: 100;
+        margin-top: 70px;
+        margin-left: 54px;
+        height: 520px;
+        /*  height: 653px;*/
+        /* overflow-y: scroll; */
+        width: 290px;
+    }
+
+    #text1 {
+        z-index: 100;
+        margin-top: 70px;
+        margin-left: 54px;
+        height: 450px;
+        overflow-y: scroll;
+        width: 290px;
+    }
+
+    #image {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        margin-top: 10px;
+    }
+
+    .slidercss {
+
+        max-width: 750px;
+        margin-left: 70px;
+    }
+
+    .footer1 {
+        float: right;
+    }
+
+    .first-column {
+        width: 45%;
+        float: left;
+    }
+
+    .second-column {
+        width: 45%;
+        float: right;
+    }
+
+    .body-border {
+        border: 1px solid #B8BFC5;
+    }
+
+    .row-border{
+        border-left: 1px solid #B8BFC5;
+
+    }
+
+    .main-slider{
+        margin-left: 50px;
+        max-width:450px;
+    }
+
+    #biglogo{
+        margin-left: 20px;
+    }
+
+    .location-well{
+        font-size: 19px;
+        text-align: left;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .main-align{
+        margin-left: 35px;
+    }
+
+    .main-faq{
+        padding-left: 40px
+    }
+
+
+    .loader{
+
+        margin-left: 120px;
+        margin-top: -30px;
+    }
+
+
+
+}
+.sp_pics{
+    width:90%;
+
+}
+
+.sp_pics1{
+    width:90%;
+    margin-bottom: 15px;
+
+}
+
+.location-well{
+
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-links {
+    color: #000000;
+    font-size: 11px;
+    text-align: left;
+}
+
+.footer-links li {
+    font-family: 'Muli', sans-serif;
+    display: inline;
+    padding: 0 5px;
+}
+
+.footer-links li:first-child {
+    padding-left: 0;
+}
+
+#hideloan, #hideinsurance, #hideacshift {
+    display: none;
+}
+
+.logo {
+    width: 250px;
+}
+
+
+.ui-autocomplete {
+    max-height: 250px;
+    overflow-y: auto; /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+    height: 100px;
+}
+
+.bodybackcolor {
+   /* background-color: #E7E7E7;*/
+}
+
+.containerbackcolor {
+    background-color: #fff;
+}
+
+.privacy-header {
+    background: #efefef;
+    font-size: 23px;
+    color: #606060;
+    display: block;
+    /*clear: left;*/
+    width: 98%;
+    padding: 5px 10px;
+    text-align: center;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.privacy-body {
+    clear: left;
+    display: table;
+    margin: 0 auto;
+    padding: 30px 0 35px;
+
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+}
+
+.phone-img {
+    width: 29%;
+    height: 600px;
+}
+
+#biglogo {
+    width: 90%;
+}
+
+.jumbotron-cabs {
+    width: 100%;
+}
+
+.jumbotron button {
+    margin: 0 0 0 auto;
+}
+
+.jumbo-link {
+    margin: 0 0 0 auto;
+    display: block;
+}
+
+.ramu-tabs {
+    font-size: 15px;
+    text-align: center;
+}
+
+#myModalLabel {
+    text-align: center;
+
+}
+
+#VisitorCount {
+    font-size: 10px;
+    padding-left: 40px;
+    margin-top: -18px;
+}
+
+.Contact-Styles {
+    font-size: 18px;
+
+}
+
+.Contact-Styles h3 {
+    text-align: center;
+}
+
+.jumbotron1 {
+    height: 475px;
+    background: url('../images/blur.jpg') no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+      */
+
+}
+
+.left-inner-addon {
+    position: relative;
+}
+
+.left-inner-addon input {
+    padding-left: 30px;
+}
+
+.left-inner-addon i {
+    position: absolute;
+    padding: 15px 12px;
+    pointer-events: none;
+}
+
+.left-inner-addon1 {
+    position: relative;
+}
+
+.left-inner-addon1 input {
+    padding-left: 30px;
+}
+
+.left-inner-addon1 i {
+    position: absolute;
+    padding: 9px 9px;
+    pointer-events: none;
+}
+
+.pac-container:after {
+    content: none !important;
+}
+
+.RealEstateSearch {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.marker-label,
+.marker-icon {
+    z-index: 99;
+    position: absolute;
+    display: block;
+    /*  margin-top: -30px;
+      margin-left: -25px;*/
+    /*  width: 50px;
+      height: 50px;*/
+    font-size: 10px !important;
+    text-align: center;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.iframe-styles {
+    text-align: justify;
+    font-size: 20px;
+    /* padding-top: 100px;*/
+
+}
+
+.iframe-styles h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+
+
+.custom-hr {
+    background: #3B7DB6;
+    border: 0;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.first-hr{
+    background: #3B7DB6;
+    border: 0;
+    height: 4px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.main-style{
+    text-align: justify;
+    font-size:18px;
+
+
+}
+
+.footer {
+
+    z-index: -1;
+    width: 100%;
+   /* background: url('../images/foot.jpg') repeat center center fixed;*/
+    background-color: #B0E1EF;
+    overflow: hidden;
+}
+
+.Services-styles{
+    margin:20px 0 0 10px;
+}
+
+.footer a{
+    color:#000000;
+    font-size: 13px;
+}
+
+#Service-Content{
+    border:0px;
+    width:100%;
+    /*height:600px;*/
+}
+
+ul.ui-autocomplete {
+    z-index: 1100;
+}
+
+.alert {
+    padding: 8px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+#city1:hover,#city1:focus{
+    text-decoration: none;
+}
+
+
+#location1:hover,#location1:focus{
+    text-decoration: none;
+}
+
+.panel-title>a {
+    text-decoration: none;
+
+}
+
+
+.filter .panel-title>a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.filter .panel-body{
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.recent li a {
+    text-decoration: none;
+}
+
+.pac-container:after {
+    content: none !important;
+}
+

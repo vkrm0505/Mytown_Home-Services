@@ -1,0 +1,448 @@
+*
+{
+    margin: 0;
+    padding: 0;
+   /*  background: url('../img/lec.jpg') no-repeat fixed;
+   background-size: cover;
+  min-height: 600px;
+  position: relative;*/
+}
+body
+{
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity:20;
+   
+}
+
+#nav-bar
+{
+    position: sticky;
+    top:0;
+    z-index: 10;
+   
+}
+/*.navbar
+{
+    
+    background: linear-gradient(rgba(20, 244, 252, 0.8),rgba(0,0,0,0.8));
+   
+
+    padding: 0 ! important; 
+
+    
+    
+}*/
+#nav-bar .navbar-brand
+{
+    color:#fff;
+}
+.navbar-nav li
+{
+    padding: 0 12px;
+}
+
+.navbar-nav li a
+{
+     color:#fff ! important;
+    font-weight: 600;
+   /* font-size: 18px;*/
+    float:left;
+	text-align:left;
+}
+.navbar-nav li a:hover
+{
+    background-color:#be9e21;
+    border-radius:5px;
+   
+}
+.fa-bars
+{
+    color:#fff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline:none !important;
+}
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #000;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+.nav-item.dropdown .dropdown-menu{
+    -webkit-transition: all 300ms ease;
+    -o-transition:all 300ms ease;
+    transition: all 300ms ease;
+    display: block;
+    font-size: 20px;
+    visibility: visible;
+    opacity: 0;
+    top: 120%;
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.05),-2px 0px 5px 1px rgba(0,0,0,0.05);
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.05),-2px 0px 5px 1px rgba(0,0,0,0.05);
+    border: 0px;
+    padding: 0px;
+    position: absolute;
+}
+
+.nav-item.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #21c87a;
+
+}
+
+/*-----------------home--------------*/
+#Home
+{
+    /*background-image: linear-gradient(to right,#2196f3,#2196f3);
+    background: linear-gradient(rgba(0,0,255),rgba(0,0,255));*/
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../img/lec.jpg');
+    color:#fff;
+    padding-top:5%;
+    padding-bottom:14%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+   
+}
+
+.promo-title0
+{
+   font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1;
+ text-align: center;
+   
+}
+.promo-title1
+{
+   font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.1;
+ text-align: center;
+}
+.promo-title2
+{
+   font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.1;
+ text-align: center;
+}
+
+.btn-find, .btn-more, .btn-find:focus, .btn-more:focus {
+  text-transform: uppercase;
+  margin-top: 50px;
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 10px 30px;
+  border-radius: 60px;
+  margin: 50px 10px 0 0;
+  outline: none !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.3s;
+    background: transparent;
+}
+.btn-find, .btn-find:focus {
+  margin-left: 15px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn-find:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+.overlay-detail a  {
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  font-size: 38px;
+  color: #fff;
+}
+
+.dropbtn {
+ 
+  text-transform: uppercase;
+  margin-top: 50px;
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 10px 30px;
+  border-radius: 60px;
+  margin: 50px 10px 0 0;
+  outline: none !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.3s;
+  background: transparent;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   
+     
+}
+
+.dropdown-content a {
+ 
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.reg
+{
+    color: #000000;
+    border:none;
+    background: transparent;
+    font-size:20px;
+}
+.dropbtn, .dropbtn:focus {
+  margin-left: 15px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.dropbtn:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+/*-------------About section-------*/
+#About1
+{
+    background: #e0ebeb;
+    
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.about1
+{
+    width: 100%;
+    margin-top:10px;
+    
+    
+}
+
+
+
+
+/*----------------------our team--------------*/
+#about
+{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/work-2.jpg');
+    color:#fff;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+   
+}
+.about-mf .box-shadow-full {
+ padding-top: 4rem;
+  padding-bottom: 4rem;
+    padding-left: 6rem;
+   
+}
+#about h2
+{
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+    width:120px;
+}
+
+.about-mf .about-img img {
+ 
+}
+.about-info
+{
+   
+    padding-bottom: 1px;
+}
+.img-fluid
+{
+    border-radius:50%;
+   
+}
+.title-s
+{
+    
+    color: #be9e21 
+}
+.ss
+{
+    
+    font-style:normal;
+    
+}
+/*--------------------Contact-----------------*/
+.contact
+{
+    
+  
+    
+    padding-bottom:0px;
+   
+    padding-top:2px;
+   
+   
+}
+.contact .row
+{
+    padding: 1px ;
+    font-size:15px;
+}
+.contact .col-md-4 .fa
+{
+    padding: 1px;
+    font-size:25px;
+}
+/*.footer
+{
+    background: linear-gradient(rgba(0,0,255),rgba(0,0,255));
+    height:20px;
+    
+    color:#000;
+   
+}*/
+
+/*------/ Socials /------*/
+
+
+
+.socials .fa {
+  height: 20px;
+  width: 20px;
+  font-size: 1.7rem;
+ 
+  line-height: 1.4;
+  margin: 0 15px 0 0;
+ 
+ 
+}
+
+.socials .fa:hover {
+ 
+  color: #be9e21 ;
+ 
+  
+    
+}
+
+/*-------------------search-----------------*/
+.search
+{
+   
+}
+.lead-form
+{
+    width:330px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius:3px;
+  
+    
+}
+
+form label
+{
+    float: left;
+    margin-left: 25px;
+    color: #999;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size:14px;
+}
+.ib
+{
+    font-size: 14px;
+    width: 280px;
+    height: 40px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color:#999;
+}
+.ib::placeholder
+{
+ color:#999;
+    
+}
+.lb
+{
+	color: #000000;
+	font-weight: bold;
+}
+.submit-btn1
+{
+    font-size: 14px;
+    width:280px;
+    height:40px;
+    color:#fff;
+    font-weight: 600;
+    background-color: #000;
+    border:none;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: -30px;
+}
+option[value="1"][disabled] {
+  display: none;
+}

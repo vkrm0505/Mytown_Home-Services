@@ -1,0 +1,75 @@
+#reserve
+{
+  min-height: 600px;
+  position: relative;
+    color:#fff;
+    padding-top:5%;
+    padding-bottom: 4.6%;
+   
+   
+}
+
+.lead-form
+{
+    width:300px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius:3px;
+   
+    
+}
+
+form label
+{
+    float: left;
+    margin-left:15px;
+    color: #999;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size:14px;
+}
+
+.lbl1
+{
+	color: #000000;
+	font-weight:bold;
+    font-size: medium;
+  
+}
+.input-box
+{
+    width:380px;
+    height: 40px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color:#000000;
+}
+.input-box::placeholder
+{
+ color:#999;
+    
+}
+
+.input-box2
+{
+    width:130px;
+    height: 40px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color:#999;
+}
+.submit-btn
+{
+    width:280px;
+    height:40px;
+    color:#fff;
+    font-weight: 600;
+    background-color: #000;
+    border:none;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: -30px;
+}

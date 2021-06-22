@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+    
+    <meta name="title"
+          content="Household Services, Carpenters, Electricians, Plumbers">
+    <title>Household Services, Carpenters, Electricians, Plumbers</title>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+
+
+
+    <!-- Stylesheets -->
+            <link href="../../assets/css/styles3807138153.min.css" rel="stylesheet"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        CI_ROOT = "../../index.php/";
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-50072457-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+<body>
+<div class="page-overlay"></div>
+<!-- Start Header Section -->
+
+
+
+<!-- Start Header Section -->
+
+<!-- End Header Section -->
+
+
+<!-- Start Header Section -->
+<!-- Inner Header Section Start -->
+
+<form action="../../services/raiseTicket" method="POST">
+<section class="nav-container">
+    <nav class="header-sticky top-pad navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+            <div class="row nav-menu">
+
+
+                    <div class="normal-header">
+                        <div class="col-md-3 col-sm-8 col-xs-8">
+                            <a href="../../index.php/" class="logo"><img
+                                        src="../../assets/images/inner-header-logo.png"
+                                        class="img-responsive"> </a>
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <input id="service_check" name="services" class="form-control top-mrg services"
+                                           tabindex="1"
+                                           value=""
+                                           placeholder="Service Eg: carpenter,plumber" required type="text">
+
+                                    <span class="top-text">in</span>
+                                    <input class="form-control top-mrg" name="location" id="location"
+                                           value="" tabindex="1"
+                                           placeholder="Area Eg: SP Road, Madhapur" type="text">
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="hidden" name="geo_lat"
+                                           value="">
+                                    <input type="hidden" name="geo_lng"
+                                           value="">
+                                    <button type="button" id="desktop_form" class="btn btn-orange big top-mrg">GO!</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                        <div class="login-div"><a href="../home/login" class="btn btn-border big">LOGIN</a></div>
+                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+            </div>
+
+
+
+            <div class="mobile-header">
+                <div class="logo">
+                    <a href="../../index.php/"><img src="../../assets/images/inner-header-logo.png"
+                                                      class="img-responsive"> </a>
+                </div>
+                <div class="row">
+
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+
+                    <div class="navbar-collapse collapse" style="height: 1px;">
+                        <ul class="nav navbar-nav">
+
+                                <li><a href="../home/login">Login</a></li>
+
+<li  >
+    <a href="../../services">Services</a>
+</li>
+
+
+<li><a href="../../aboutUs">About Us</a></li>
+<li><a href="../home/spRegistration">Join Us</a></li>
+<li class="fint-text">Find us on</li>
+ </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+    
+
+
+<div class="modal fade" id="otp_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body text-center">
+
+                        <div id="mobile_div">
+                            <h3 class="botmrg20"><strong>Please enter your Mobile Number</strong></h3>
+
+                            <div class="form-group botmrg20">
+                                <input type="number" class="form-control input-middle" name="mobile" id="mob" required>
+                            </div>
+
+                                <div class="form-group">
+                                    <div class="checkbox checkbox-orange">
+                                        <input id="checkbox2" type="checkbox" name="toc" checked="" required>
+                                        <label for="checkbox2" id="toc_checkbox">
+    I agree to the <a target="_blank" href="../home/termsofUse">Terms &
+    Conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="button" id="sendOTP" class="btn btn-orange">Next</button>
+                                </div>
+
+
+                        </div>
+
+                        <div class="hidden" id="otp_div">
+
+                            <h3 class="botmrg20"><strong>Please enter the OTP</strong></h3>
+
+                                    <div class="form-group botmrg20">
+                                        <input type="number" class="form-control input-middle" name="otp" id="cust_otp"
+                                               required>
+                                    </div>
+                                    <p class="botmrg20" id="timer">02:00</p>
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                        <button type="button" id="goBack" class="btn btn-blue col-sm-4 pull-left">Back
+                                        </button>
+                                        <button type="submit" class="btn btn-orange col-sm-4 pull-right">Proceed</button>
+                                        </div>
+                                    </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div></form>
+<!-- Inner Header Section End -->
+
+<script>
+    var check_session = '';
+    if (check_session!='') {
+        localStorage.setItem('services', check_session);
+    }
+</script>
+<section class="cont-pad">
+    <div class="container">
+        <div class="row explore-all">
+            <div class="col-md-12 text-right">
+                <a href="../home/services"> Explore all Services</a>
+            </div>
+        </div>
+
+        <div class="row topPad30 normal-search">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+                <h1> About Us</h1>
+            </div>
+        </div>
+
+        <div class="row topPad30 mob-search">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+                <h1> About Us</h1>
+            </div>
+        </div>
+
+        <!--<div class="alert alert-danger fade in">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            Oops! Looks like you have not registered with us as a Service Provider. Looking to join us?
+        </div>-->
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <p>My Town Home-Services, inspired by the ever-significant reference in Indian household context, is the one stop solution for all your daily needs. Be it the most miniscule or the most daunting Household Service, we serve you with the best quality, highly reliable and recommended Independent Professionals and Enterprise Service Providers</p>
+                <p>With My Town Home-Services on your fingertips, all your domiciliary needs will be taken care of! The software offers an extremely quick, easy and customised search option for your requirements. It also provides a real time attendance of all service providers around you, ensuring that there is someone to address your needs, always.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <p>With a seamless, less than 60-second booking initiation process and real time attendance module (which ensures readiness to offer service instantly), My Town Home-Services is the easiest and most convenient way to identify the best service providers, close to you.</p>
+                <p>At My Town Home-Services, we set high goals and make sure we achieve them. So, sit back and relax and let My Town Home-Services be at your service- anytime, anywhere!</p>
+            </div>
+        </div>
+
+        <div class="row topPad30">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+                <h1> Why My Town Home-Services</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="font-weight400">Customers</h3>
+                <ul class="about-customers">
+                    <li>
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="../../assets/images/about-customers/D_AboutUs_Customers_01.png" class="img-responsive" alt="Card image cap">
+                            </div>
+                            <div class="card-block d-flex">
+                                <p class="card-text">Get served by Service Provider's recommended by like-minded people.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="../../assets/images/about-customers/D_AboutUs_Customers_02.png" class="img-responsive" alt="Card image cap">
+                            </div>
+                            <div class="card-block d-flex">
+                                <p class="card-text">Business model offers Real Time attendance & Quick response for your service requirements, from our service providers.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="../../assets/images/about-customers/D_AboutUs_Customers_03.png" class="img-responsive" alt="Card image cap">
+                            </div>
+                            <div class="card-block d-flex">
+                                <p class="card-text">Benefit from the competition among service providers and win the most competitive pricing.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="../../assets/images/about-customers/D_AboutUs_Customers_04.png" class="img-responsive" alt="Card image cap">
+                            </div>
+                            <div class="card-block d-flex">
+                                <p class="card-text">Rigorous rating system for service providers ensures survival of only the best service providers.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="../../assets/images/about-customers/D_AboutUs_Customers_05.png" class="img-responsive" alt="Card image cap">
+                            </div>
+                            <div class="card-block d-flex">
+                                <p class="card-text">Array of service providers ready to serve you anywhere, anytime.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row topPad30 about-sp">
+            <div class="col-md-12">
+                <h3 class="font-weight400">Service Providers</h3>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="../../assets/images/about-service-providers/D_AboutUs_ServiceProviders_01.png" class="img-responsive" alt="Card image cap">
+                    </div>
+                    <div class="card-block d-flex">
+                        <p class="card-text">On My Town Home-Services, you can choose your own working radius and we will ensure that you receive leads only from there. Our fully automated system allows you to login or log off as per your convenience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="../../assets/images/about-service-providers/D_AboutUs_ServiceProviders_02.png" class="img-responsive" alt="Card image cap">
+                    </div>
+                    <div class="card-block d-flex">
+                        <p class="card-text">Control your Budget - You decide the number of leads you need per day and control your budget.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="../../assets/images/about-service-providers/D_AboutUs_ServiceProviders_03.png" class="img-responsive" alt="Card image cap">
+                    </div>
+                    <div class="card-block d-flex">
+                        <p class="card-text">Pay as you Go - Managing finances will no more be a hassle! On My Town Home-Services, you need not pay monthly i.e. you only pay when you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="../../assets/images/about-service-providers/D_AboutUs_ServiceProviders_04.png" class="img-responsive" alt="Card image cap">
+                    </div>
+                    <div class="card-block d-flex">
+                        <p class="card-text">Choose from an array of online payment gateways and explore the world of online transactions like never before! Choose from our online payment system or hundreds of recharge centre’s near to you.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row topPad30">
+            <div class="col-md-12">
+                <h3 class="font-weight400">Statistics</h3>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <!--<div id="pie" class="example" style="width: 100px;"></div>-->
+
+                <svg id="svg" style="overflow: visible;margin-bottom: 60px"></svg>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+    var programmingSkills = [
+        {
+            value: 40,
+            label: 'Approximately 40% of the Service Providers quote unreasonable pricing.',
+            color: '#2e2866'
+        },
+        {
+            value: 30,
+            label: 'Approximately 30% of the Service Providers are amateurs and are not Professionally trained.',
+            color: '#43398f'
+        },
+        {
+            value: 20,
+            label: 'Approximately 20% of the Service Providers are affordable and professionally trained but are always engaged with other commitments.',
+            color: '#5d54bf'
+        },
+        {
+            value: 10,
+            label: 'My Town Home-Services\'s Business Model precisely focuses on this 10% of Service Providers and ensures that you are served only from the best.',
+            color: '#7b6dfe'
+        }
+    ];
+</script>
+
+<script src="../../assets/js/snap.svg-min.js"></script>
+<script src="../../assets/js/svg-donut-chart-framework.js"></script>
+<!-- Footer Section Start -->
+<!-- Footer Big Start-->
+<footer class="footer-inner ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <p class="copy-right">©My Town Home-Services 2021 All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <ul class="footer-links">
+                    <li><a href="../home/services"> Services</a></li>
+                    <li><a href="../home/aboutUs">About</a></li>
+                    <li><a href="../home/spRegistration">Join Us</a></li>
+                    <li><a href="../home/contactUs">Contact Us</a></li>
+                    <li><a href="../home/privacyPolicy">Privacy Policy</a></li>
+                    <li><a href="../home/termsofUse">Terms of Use</a></li>
+                </ul>
+                <ul class="mob-footer-links">
+                    <li><a href="../home/contactUs">Contact Us</a></li>
+                    <li><a href="../home/privacyPolicy">Privacy Policy</a></li>
+                    <li><a href="../home/termsofUse">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<footer class="footer-main hidden-xs hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="row">
+                    <div class="col-md-4 no-lr-pad">
+                        <ul class="fthin-links">
+                            <li><a href="../../services/carpenter/hyderabad">Carpenter</a></li>
+                            <li><a href="../../services/plumber/hyderabad">Plumber</a></li>
+                            <li><a href="../../services/electrician/hyderabad">Electrician</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 no-lr-pad">
+                        <ul class="fthin-links">
+                            <li><a href="../../services/ac-repair/hyderabad">AC Repair</a></li>
+                            <li><a href="../../services/refrigeratorfridge-repair/hyderabad">Fridge Repair</a></li>
+                            <li><a href="../../services/pest-control-general/hyderabad">Pest Control</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 no-lr-pad">
+                        <ul class="fthin-links no-border">
+                            <li><a href="../../services/tv-repair-lcdledplasma/hyderabad">TV Repair</a></li>
+                            <li><a href="../../services/full-home-cleaning/hyderabad">Full Home Cleaning</a></li>
+                            <li><a href="../../services/washing-machine-repair/hyderabad">Washing Machine Repair</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 text-center">
+                <img src="../../assets/images/main-footer-logo.png" class="">
+                <p class="copy-right">©My Town Home-Services 2021 All Rights Reserved.</p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="row">
+                    <div class="col-md-4 no-lr-pad">
+                        <ul class="fthin-links">
+
+
+
+
+                                                            <li><a href="../home/login">Customer Login</a></li>
+                                <li><a href="../home/login">SP Login</a></li>
+                            
+
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-4 no-lr-pad">
+                        <ul class="fthin-links">
+                            <li><a href="../home/services">Services</a></li>
+                            <li><a href="../home/aboutUs">About Us</a></li>
+                            <li><a href="../home/spRegistration">Join Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 no-lr-pad">
+                        <ul class="fthin-links no-border">
+                            <li><a href="../home/contactUs">Contact Us</a></li>
+                            <li><a href="../home/privacyPolicy">Privacy Policy</a></li>
+                            <li><a href="../home/termsofUse">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function() {
+        $('select:not(.ignore)').niceSelect();
+        /*FastClick.attach(document.body);*/
+    });
+</script>
+
+
+<script>
+    (function(){
+
+        $('#itemslider').carousel({ interval: 3000 });
+    }());
+
+    (function(){
+        $('.carousel-showmanymoveone .item').each(function(){
+            var itemToClone = $(this);
+
+            for (var i=1;i<6;i++) {
+                itemToClone = itemToClone.next();
+
+
+                if (!itemToClone.length){
+                    itemToClone = $(this).siblings(':first');
+                }
+
+                itemToClone.children(':first-child').clone()
+                    .addClass("cloneditem-"+(i))
+                    .appendTo($(this));
+            }
+        });
+    }());
+</script>
+
+
+
+<script type="text/javascript">
+
+    $('.carousel[data-type="multi"] .item').each(function(){
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        for (var i=0;i<1;i++) {
+            next=next.next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+        }
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        //Set the carousel options
+        $('#test-carousel').carousel({
+            pause: true,
+            interval: 4000,
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.navbar-toggle').click(function() {
+            $(this).toggleClass('menuActive');
+        });
+    });
+</script>
+
+<script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBfCCB1gtXQG-GyJUt6PIhDDDPMo3ir-nQ" type="text/javascript"></script>
+
+    <script src="../../assets/js/scripts3807138153.min.js"></script>
+
+
+
+<script type="text/javascript">
+    window.heap = window.heap || [], heap.load = function (t, e) {
+        window.heap.appid = t, window.heap.config = e;
+        var a = document.createElement("script");
+        a.type = "text/javascript", a.async = !0, a.src = ("https:" === document.location.protocol ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + t + ".js";
+        var n = document.getElementsByTagName("script")[0];
+        n.parentNode.insertBefore(a, n);
+        for (var o = function (t) {
+            return function () {
+                heap.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+        }, p = ["clearEventProperties", "identify", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++)heap[p[c]] = o(p[c])
+    };
+    heap.load("705504568");
+</script>
